@@ -96,16 +96,6 @@
                               placeholder="Phone number">
                     </div>
                     <div class="col-md-3 col-sm-6">
-                         <input type="date" class="form-control" id="cf-name" name="bookingdate"
-                              placeholder="Full name">
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-
-                         <input type="text" id="timepicker" name="bookingtime"
-                              class="timepicker form-control hasWickedpicker" placeholder="Time" required=""
-                              onkeypress="return false;">
-                    </div>
-                    <div class="col-md-6 col-sm-6">
                          <select class="form-control" name="noadults" required>
                               <option value="">Number of Adults</option>
                               <option value="1">1</option>
@@ -118,10 +108,10 @@
                               <option value="8">8</option>
                          </select>
                     </div>
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-3 col-sm-6">
                          <select class="form-control" name="nochildrens" required>
                               <option value="">Number of Children</option>
-                              <option value="1">0</option>
+                              <option value="0">0</option>
                               <option value="1">1</option>
                               <option value="2">2</option>
                               <option value="3">3</option>
@@ -132,11 +122,43 @@
                               <option value="8">8</option>
                          </select>
                     </div>
+                    <div class="col-md-6 col-sm-6">
+                         <input type="date" class="form-control" id="cf-name" name="bookingdate"
+                              placeholder="Full name">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <select class="form-control" name="nochildrens" required>
+                              <option value="">Time</option>
+                              <option value="1 : 00">1 : 00</option>
+                              <option value="2 : 00">2 : 00</option>
+                              <option value="3 : 00">3 : 00</option>
+                              <option value="4 : 00">4 : 00</option>
+                              <option value="5 : 00">5 : 00</option>
+                              <option value="6 : 00">6 : 00</option>
+                              <option value="7 : 00">7 : 00</option>
+                              <option value="8 : 00">8 : 00</option>
+                              <option value="8 : 00">9 : 00</option>
+                              <option value="8 : 00">10 : 00</option>
+                              <option value="8 : 00">11 : 00</option>
+                              <option value="8 : 00">12 : 00</option>
+                         </select>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <select class="form-control" name="nochildrens" required>
+                              <option value="">AM / PM</option>
+                              <option value="AM">AM</option>
+                              <option value="PM">PM</option>
+
+                         </select>
+                    </div>
 
 
+                    <div class="col-md-3 col-sm-6">
 
-                    <input type="submit" value="Submit">
-                    <div class="copy">
+
+                         <input type="submit" value="Submit">
+                    </div>
+                    <div class="status">
                          <p>Check Booking <a href="check-status.php" target="_blank">Status</a></p>
                     </div>
                </form>
