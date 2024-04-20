@@ -403,15 +403,15 @@ http://www.templatemo.com/tm-515-eatery
   }
 
   .slider .item-first {
-    background-image: url(../images/slider-image1.jpg);
+    background-image: url(../../images/frontend/slider-image1.jpg);
   }
 
   .slider .item-second {
-    background-image: url(../images/slider-image2.jpg);
+    background-image: url(../../images/frontend/slider-image2.jpg);
   }
 
   .slider .item-third {
-    background-image: url(../images/slider-image3.jpg);
+    background-image: url(../../images/frontend/slider-image3.jpg);
   }
 
   .slider .item-second .section-btn {
@@ -642,7 +642,7 @@ http://www.templatemo.com/tm-515-eatery
   -----------------------------------------*/
 
   #testimonial {
-    background: url('../images/testimonial-bg.jpg') center center no-repeat;
+    background: url('../../images/frontend/testimonial-bg.jpg') center center no-repeat;
     background-size: cover;
   }
 
@@ -781,7 +781,7 @@ http://www.templatemo.com/tm-515-eatery
 
   .footer-open-hour {
     background: #ce3232;
-    background: url('../images/footer-open-hour-bg.jpg') center center no-repeat;
+    background: url('../../images/frontend/footer-open-hour-bg.jpg') center center no-repeat;
     background-size: cover;
     border-radius: 20px;
     margin-top: 0;
