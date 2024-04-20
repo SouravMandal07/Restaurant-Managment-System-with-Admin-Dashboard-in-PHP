@@ -54,9 +54,9 @@
                          </ul>
 
                          <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s">
-                              <p><br>Copyright &copy; 2018 <br>Your Company Name
+                              <p><br>Copyright &copy; <?php echo date("Y"); ?> <br>Your Company Name
 
-                                   <br><br>Design: <a rel="nofollow" href="http://templatemo.com" target="_parent">TemplateMo</a>
+                                   <br><br>Design: <a rel="nofollow" href="http://codingsourav.000webhostapp.com" target="_parent">Sourav</a>
                               </p>
                          </div>
                     </div>

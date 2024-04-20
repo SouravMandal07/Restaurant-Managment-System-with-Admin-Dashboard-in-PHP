@@ -1,3 +1,4 @@
+
 <?php include_once("backend/admin/includes/config.php");
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -34,6 +35,28 @@ if (isset($_POST['submit'])) {
      }
 }
 
+
+if (isset($_POST['submitContact'])) {
+     $name = $_POST['name'];
+     $email = $_POST['email'];
+     $subject = $_POST['subject'];
+     $message = $_POST['message'];
+
+     $sql = "INSERT INTO contacts(name, email, subject, message) VALUES('$name', '$email', '$subject', '$message')";
+     $result = mysqli_query($con, $sql);
+     if ($result) {
+          echo "<script>
+          alert('Message has been sent successfully! we will get back to you soon.');
+          
+          </script>";
+     } else {
+          echo "<script>
+          alert('Something went wrong');
+          
+          </script>";
+     }
+}
+
 ?>
 
 
@@ -59,6 +82,8 @@ if (isset($_POST['submit'])) {
           </div>
      </section>
 
+    
+
 
      <!-- MENU -->
      <?php include "frontend/layouts/navbar.php"; ?>
@@ -74,14 +99,14 @@ if (isset($_POST['submit'])) {
                <form id="reservationForm" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
                     <h2 class="rheading">Table Reservation</h2>
                     <div class="col-md-6 col-sm-6">
-                         <input type="text" class="form-control" id="cf-name" name="name" placeholder="Full name">
+                         <input type="text" class="form-control" id="cf-name" name="name" placeholder="Full name" required>
                     </div>
 
                     <div class="col-md-6 col-sm-6">
-                         <input type="email" class="form-control" id="cf-name" name="email" placeholder="Email">
+                         <input type="email" class="form-control" id="cf-name" name="email" placeholder="Email" required>
                     </div>
                     <div class="col-md-6 col-sm-6">
-                         <input type="text" class="form-control" id="cf-name" name="phonenumber" placeholder="Phone number">
+                         <input type="text" class="form-control" id="cf-name" name="phonenumber" placeholder="Phone number" required>
                     </div>
                     <div class="col-md-3 col-sm-6">
                          <select class="form-control" name="noadults" required>
@@ -186,7 +211,7 @@ if (isset($_POST['submit'])) {
 
 
 
-
+    
 </body>
 
 </html>
